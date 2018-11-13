@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+<repo quality="experimental" status="unofficial">
+   <name>fulgurance-overlay</name>
+   <description>Fulgurance Gentoo Overlay</description>
+   <homepage>https://github.com/Fulgurance/Gentoo-Overlay</homepage>
+   <owner>
+       <email>zohran.londais@gmail.com</email>
+       <name>Fulgurance</name>
+   </owner>
+   <source type="git">https://github.com/Fulgurance/Gentoo-Overlay.git</source>
+</repo>
+</repositories>
