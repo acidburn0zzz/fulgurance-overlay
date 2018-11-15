@@ -13,3 +13,10 @@ To add this overlay to Portage using `layman`, run `layman -o
 https://github.com/Fulgurance/Gentoo-Overlay/raw/master/fulgurance-overlay.xml -f -a fulgurance-overlay`. 
 To update the repository, run `layman -s fulgurance-overlay` (or `layman -S` to update all the installed 
 overlays managed by Layman).
+
+## Available ebuilds
+
+app-laptop/msi-keyboard
+dev-lang/fasm-bin
+dev-lang/fasmg-bin
+games-action/kag (on test, don't work at moment)
