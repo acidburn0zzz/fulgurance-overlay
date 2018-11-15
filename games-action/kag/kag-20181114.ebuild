@@ -9,11 +9,22 @@ KEYWORDS="~amd64"
 LICENSE="EULA"
 SLOT="0"
 SRC_URI="http://dl.kag2d.com/kag-linux32-client-release.tar.gz -> ${P}.tgz"
-S="${WORKDIR}" 
+S="${WORKDIR}"
+QA_PREBUILT="
+   opt/kag/libJuxta.so
+   opt/kag/KAG
+   opt/kag/lib/libIrrKlang.so
+   opt/kag/lib/libpng15.so
+   opt/kag/lib/libsteam_api.so
+"
 
 src_install()
 {
         insinto "/opt/kag"
+	exeinto "/opt/kag"
+	doexe "runlocalhost.sh"
+	doexe "rungame.sh"
+	doexe "KAG"
         dodir "/opt/kag"
         doins -r "App"
         doins -r "Base"
@@ -37,6 +48,6 @@ src_install()
         doins "runlocalhost.sh"
         doins "steam_appid.txt"
         doins "terms.txt"
-        dosym "${ED%/}/opt/kag/rungame.sh" "/usr/bin/kag" 
-        make_desktop_entry "kag" "KAG" "/opt/kag/KAG.ico" "Game" "Comment='2D MMORPG about mining resources, building castles and destroying your enemies'"
-} 
+        dosym "${ED%/}/opt/kag/rungame.sh" "/usr/bin/kag"
+        make_desktop_entry "kag" "KAG" "/opt/kag/KAG.ico" "Game"
+}
