@@ -3,6 +3,7 @@
 
 EAPI=7
 
+inherit desktop
 DESCRIPTION="2D MMORPG about mining resources, building castles and destroying your enemies"
 HOMEPAGE="https://www.kag2d.com/en/"
 KEYWORDS="~amd64"
@@ -22,9 +23,6 @@ src_install()
 {
         insinto "/opt/kag"
 	exeinto "/opt/kag"
-	doexe "runlocalhost.sh"
-	doexe "rungame.sh"
-	doexe "KAG"
         dodir "/opt/kag"
         doins -r "App"
         doins -r "Base"
@@ -39,13 +37,13 @@ src_install()
         doins "curl-license.txt"
         doins "forceupdate.sh"
         doins "irrlicht.ico"
-        doins "KAG"
+        doexe "KAG"
         doins "libJuxta.so"
         doins "mods.cfg"
-        doins "nolauncher.sh"
+        doexe "nolauncher.sh"
         doins "readme.txt"
-        doins "rungame.sh"
-        doins "runlocalhost.sh"
+        doexe "rungame.sh"
+        doexe "runlocalhost.sh"
         doins "steam_appid.txt"
         doins "terms.txt"
         dosym "${ED%/}/opt/kag/rungame.sh" "/usr/bin/kag"

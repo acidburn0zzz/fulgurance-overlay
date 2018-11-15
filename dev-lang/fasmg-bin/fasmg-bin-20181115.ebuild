@@ -9,8 +9,7 @@ KEYWORDS="~amd64"
 LICENSE="BSD-2"
 SLOT="0"
 SRC_URI="https://flatassembler.net/fasmg.zip -> ${P}.zip"
-FASM_PN="${PN/-bin}"
-S="${WORKDIR}/${FASM_PN}"
+S="${WORKDIR}"
 
 src_install()
 {
