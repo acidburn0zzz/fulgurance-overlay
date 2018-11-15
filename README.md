@@ -16,7 +16,7 @@ overlays managed by Layman).
 
 ## Available ebuilds
 
-app-laptop/msi-keyboard
-dev-lang/fasm-bin
-dev-lang/fasmg-bin
-games-action/kag (on test, don't work at moment)
+- app-laptop/msi-keyboard
+- dev-lang/fasm-bin
+- dev-lang/fasmg-bin
+- games-action/kag (on test, don't work at moment)
