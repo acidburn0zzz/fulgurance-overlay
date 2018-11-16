@@ -12,7 +12,6 @@ LICENSE="EULA"
 SLOT="0"
 SRC_URI="http://dl.kag2d.com/kag-linux32-client-release.tar.gz -> ${P}.tgz"
 S="${WORKDIR}"
-
 QA_PREBUILT="
    opt/kag/libJuxta.so
    opt/kag/KAG
@@ -20,7 +19,6 @@ QA_PREBUILT="
    opt/kag/lib/libpng15.so
    opt/kag/lib/libsteam_api.so
 "
-
 KAG_DIR="/opt/${PN}"
 
 pkg_setup() {
