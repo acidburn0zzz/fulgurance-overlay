@@ -19,4 +19,4 @@ overlays managed by Layman).
 - app-laptop/msi-keyboard
 - dev-lang/fasm-bin
 - dev-lang/fasmg-bin
-- games-action/kag (on test, don't work at moment)
+- games-action/kag
