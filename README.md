@@ -20,3 +20,5 @@ overlays managed by Layman).
 - dev-lang/fasm-bin
 - dev-lang/fasmg-bin
 - games-action/kag
+- app-shells/zsh-theme-powerlevel9k (missing fonts, wait next 
+overlay update)
