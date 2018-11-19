@@ -8,6 +8,7 @@ HOMEPAGE="https://github.com/bhilburn/powerlevel9k"
 KEYWORDS="~amd64"
 LICENSE="MIT"
 SLOT="0"
+RDEPEND="media-fonts/powerline-symbols"
 SRC_URI="https://github.com/bhilburn/powerlevel9k/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}"
 EXTRACT_DIR="powerlevel9k-0.6.6"
@@ -27,5 +28,6 @@ src_install()
 }
 
 pkg_postinst() {
-   elog "To use powerlevel9k zsh theme, add 'source \"/usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme\"' to your .zshrc file."
+   elog "To use powerlevel9k zsh theme, add 'source \"/usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme\"' to your .zshrc file"
+   elog "and don'\t forget to enable powerline fonts with 'eselect fontconfig' command"
 }
