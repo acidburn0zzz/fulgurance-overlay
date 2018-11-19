@@ -29,5 +29,5 @@ src_install()
 
 pkg_postinst() {
    elog "To use powerlevel9k zsh theme, add 'source \"/usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme\"' to your .zshrc file"
-   elog "and don'\t forget to enable powerline fonts with 'eselect fontconfig' command"
+   elog "and don't forget to enable powerline fonts with 'eselect fontconfig' command."
 }
