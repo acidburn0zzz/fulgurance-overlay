@@ -9,7 +9,7 @@ HOMEPAGE="https://github.com/makkarpov/msi-keyboard"
 KEYWORDS="~amd64"
 LICENSE="GPL-3"
 SLOT="0"
-COMMON_DEPEND="dev-libs/hidapi"
+RDEPEND="dev-libs/hidapi"
 SRC_URI="https://github.com/makkarpov/msi-keyboard/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 src_install()
 {
