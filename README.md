@@ -20,4 +20,5 @@ overlays managed by Layman).
 - dev-lang/fasm-bin
 - dev-lang/fasmg-bin
 - media-fonts/awesome-terminal-fonts
+- media-fonts/nerd-fonts
 - app-shells/zsh-theme-powerlevel9k
