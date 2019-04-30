@@ -10,7 +10,7 @@ LICENSE="MIT"
 SLOT="0"
 IUSE="awesome awesome-terminal awesome-terminal-patched nerd powerline"
 SRC_URI="https://github.com/bhilburn/powerlevel9k/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-RDEPEND="awesome? ( media-fonts/fontawesome)
+RDEPEND="awesome? ( media-fonts/fontawesome )
          awesome-terminal? ( media-fonts/awesome-terminal-fonts )
          nerd? ( media-fonts/nerd-fonts )
          powerline? ( media-fonts/powerline-symbols )"

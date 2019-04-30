@@ -9,7 +9,7 @@ KEYWORDS="~amd64"
 LICENSE="MIT"
 SLOT="0"
 https://github.com/ryanoasis/nerd-fonts/archive/v2.0.0.tar.gz
-SRC_URI="https://github.com/ryanoasis/nerd-fonts/archive/vv${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/ryanoasis/nerd-fonts/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}"
 EXTRACT_DIR="nerd-fonts-${PV}"
 
