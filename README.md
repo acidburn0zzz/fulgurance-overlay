@@ -19,5 +19,6 @@ overlays managed by Layman).
 - app-laptop/msi-keyboard
 - dev-lang/fasm-bin
 - dev-lang/fasmg-bin
-- games-action/kag
+- media-fonts/awesome-terminal-fonts
+- media-fonts/nerd-fonts
 - app-shells/zsh-theme-powerlevel9k
