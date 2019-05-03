@@ -11,11 +11,11 @@ LICENSE="GPL-3"
 SLOT="0"
 RDEPEND="dev-libs/hidapi"
 PATCHES=(
-        "${FILESDIR}"/${P}-cflags.patch
+    "${FILESDIR}"/${P}-cflags.patch
 )
 SRC_URI="https://github.com/makkarpov/msi-keyboard/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 src_install()
 {
-	udev_dorules 99-msi-keyboard.rules
-	dobin msi-keyboard
+    udev_dorules 99-msi-keyboard.rules
+    dobin msi-keyboard
 }
