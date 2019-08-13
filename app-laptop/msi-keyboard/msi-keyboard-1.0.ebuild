@@ -18,5 +18,6 @@ SRC_URI="https://github.com/makkarpov/msi-keyboard/archive/v${PV}.tar.gz -> ${P}
 
 src_install() {
 		udev_dorules 99-msi-keyboard.rules
+		udev_reload
 		dobin msi-keyboard
 }
