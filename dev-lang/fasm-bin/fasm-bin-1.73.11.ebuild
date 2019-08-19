@@ -5,14 +5,15 @@ EAPI=7
 
 DESCRIPTION="Flat Assembler for the x86 architecture processors"
 HOMEPAGE="https://flatassembler.net/"
-KEYWORDS="~amd64"
+SRC_URI="https://flatassembler.net/fasm-${PV}.tgz -> ${P}.tgz"
+
 LICENSE="BSD-2"
 SLOT="0"
-SRC_URI="https://flatassembler.net/fasm-${PV}.tgz -> ${P}.tgz"
+KEYWORDS="~amd64"
+
 FASM_PN="${PN/-bin}"
 S="${WORKDIR}/${FASM_PN}"
 
-src_install()
-{
+src_install() {
 	newbin fasm.x64 fasm
 }
