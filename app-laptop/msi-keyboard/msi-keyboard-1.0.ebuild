@@ -15,7 +15,7 @@ KEYWORDS="~amd64"
 
 RDEPEND="dev-libs/hidapi"
 PATCHES=(
-	"${FILESDIR}"/${P}-cflags.patch
+	"${FILESDIR}"/${P}-makefile.patch
 )
 
 src_install() {
