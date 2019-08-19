@@ -15,11 +15,11 @@ KEYWORDS="~amd64"
 
 RDEPEND="dev-libs/hidapi"
 PATCHES=(
-		"${FILESDIR}"/${P}-cflags.patch
+	"${FILESDIR}"/${P}-cflags.patch
 )
 
 src_install() {
-		udev_dorules 99-msi-keyboard.rules
-		udev_reload
-		dobin msi-keyboard
+	udev_dorules 99-msi-keyboard.rules
+	udev_reload
+	dobin msi-keyboard
 }
