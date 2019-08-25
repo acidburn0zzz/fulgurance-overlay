@@ -5,20 +5,20 @@ EAPI=7
 
 DESCRIPTION="Powerlevel9k theme for ZSH which uses Powerline Fonts."
 HOMEPAGE="https://github.com/bhilburn/powerlevel9k"
-KEYWORDS="~amd64"
+SRC_URI="https://github.com/bhilburn/powerlevel9k/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+
 LICENSE="MIT"
 SLOT="0"
-IUSE="awesome awesome-terminal awesome-terminal-patched nerd powerline"
-SRC_URI="https://github.com/bhilburn/powerlevel9k/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+KEYWORDS="~amd64"
+IUSE="awesome powerline"
+
 RDEPEND="awesome? ( media-fonts/fontawesome )
-         awesome-terminal? ( media-fonts/awesome-terminal-fonts )
-         nerd? ( media-fonts/nerd-fonts )
-         powerline? ( media-fonts/powerline-symbols )"
+				powerline? ( media-fonts/powerline-symbols )"
+
 S="${WORKDIR}"
 EXTRACT_DIR="powerlevel9k-${PV}"
 
-src_install()
-{
+src_install() {
 	insinto "/usr/share/zsh-theme-powerlevel9k"
 	doins -r {"${EXTRACT_DIR}/debug","${EXTRACT_DIR}/docker","${EXTRACT_DIR}/functions","${EXTRACT_DIR}/shunit2","${EXTRACT_DIR}/test","${EXTRACT_DIR}/test-bsd-vm","${EXTRACT_DIR}/test-vm","${EXTRACT_DIR}/test-vm-providers"}
 	doins "${EXTRACT_DIR}/CHANGELOG.md"
