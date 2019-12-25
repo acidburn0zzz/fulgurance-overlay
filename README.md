@@ -16,9 +16,6 @@ overlays managed by Layman).
 
 ## Available ebuilds
 
-- app-laptop/msi-keyboard
+- app-laptop/msi-keyboard (now available at official gentoo repository)
 - dev-lang/fasm-bin
 - dev-lang/fasmg-bin
-- media-fonts/awesome-terminal-fonts
-- media-fonts/nerd-fonts
-- app-shells/zsh-theme-powerlevel9k
