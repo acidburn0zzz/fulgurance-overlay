@@ -3,6 +3,8 @@
 
 EAPI=7
 
+inherit git-r3
+
 DESCRIPTION="Experimental open-source emulator for the Nintendo Switch"
 HOMEPAGE="https://yuzu-emu.org/"
 EGIT_REPO_URI="https://github.com/yuzu-emu/${PN}.git"
