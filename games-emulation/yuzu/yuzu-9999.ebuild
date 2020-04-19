@@ -11,9 +11,9 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-RDEPEND="dev-libs/libsdl2
+RDEPEND="media-libs/libsdl2
         dev-qt/qtcore
-        dev-qt/opengl
+        dev-qt/qtopengl
         >=sys-devel/gcc-7.1.0
         dev-util/cmake
         dev-lang/python"
