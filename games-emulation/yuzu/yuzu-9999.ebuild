@@ -5,7 +5,7 @@ EAPI=7
 
 DESCRIPTION="Experimental open-source emulator for the Nintendo Switch"
 HOMEPAGE="https://yuzu-emu.org/"
-EGIT_REPO_URI="https://github.com/yuzu-emu/yuzu"
+EGIT_REPO_URI="https://github.com/yuzu-emu/${PN}.git"
 
 LICENSE="GPL-3"
 SLOT="0"
