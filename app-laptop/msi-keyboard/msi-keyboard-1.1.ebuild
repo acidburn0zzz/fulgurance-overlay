@@ -14,6 +14,9 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="dev-libs/hidapi"
+PATCHES=(
+	"${FILESDIR}"/${P}-makefile.patch
+)
 
 src_install() {
 	udev_dorules 99-msi-keyboard.rules
