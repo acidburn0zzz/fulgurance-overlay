@@ -7,14 +7,14 @@ inherit udev
 
 DESCRIPTION="Control backlight of MSI laptop keyboards"
 HOMEPAGE="https://github.com/makkarpov/msi-keyboard"
-SRC_URI="https://github.com/makkarpov/msi-keyboard/archive/v1.0.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}"
+SRC_URI="https://github.com/makkarpov/msi-keyboard/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="dev-libs/hidapi"
+
 PATCHES=(
 	"${FILESDIR}"/${P}-makefile.patch
 )
